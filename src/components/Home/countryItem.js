@@ -3,11 +3,14 @@ import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 
-const ItemsCard = ({ id, country }) => (
+const ItemsCard = ({ id, country, totallConfirmed }) => (
   <Link className="countries" to={`details/${id}`} key={id}>
     <div className="country display">
       <h2 className="ea-country">{country}</h2>
-      <AiOutlineRightCircle />
+      <div className="">
+        <AiOutlineRightCircle />
+        {totallConfirmed}
+      </div>
     </div>
   </Link>
 );
