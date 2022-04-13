@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', sans-serif;
-                                                
 }
 
 html,
@@ -126,7 +125,7 @@ h2.ea-country {
 .info-covid {
   align-items: center;
   justify-content: center;
-   background:
+  background:
     linear-gradient(
       to right,
       rgba(255, 203, 203, 0),
@@ -174,7 +173,7 @@ li:nth-child(odd) {
 }
 
 .flag {
-  flex:1;
+  flex: 1;
 }
 
 .total-country {
