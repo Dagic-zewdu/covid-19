@@ -2,143 +2,89 @@
 
 # COVID-19 Data TRACKER
 
-> This is Covid-19 data that shows for each country.You can search your country and know its statistics.  
+> This is Covid-19 data that shows for each country.You can search your country and know its statistics . 
 
 ![screenshot](src/Assets/Screen-Shot.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Built With
 
-## Tools used
+- HTML, CSS, JS
+- Bootstrap, SCSS, React, Redux
 
-- React
-- Javascript
-- Babel
-- npm
-- webpack
 
 ## Live Demo
 
-[Live Demo Link]()
+- [Live Demo Link]()
 
-### Prerequisites
 
-The basic requirements for building the executable are:
-
-- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
-- VSCode or any other equivalent code editor
-- Node Package Manager (For running, debuging, or installing dependancies to be used)
-
-<br>
-<br>
-
-## Getting Started
- 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can:
 
-### `npm start`
+### Run the app in the development mode
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Launch your terminal,
+- `cd` into the directory where you want to clone your project,
+- Enter the commands below
+```
+$ git clone git@github.com:damdafayton/group-project-spacehub.git
+$ npm install
+$ npm start
+````
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### `npm test`
+### Launch the test runner in the interactive watch mode
 
-Launches the test runner in the interactive watch mode.<br />
+`npm test`
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Build the app for production to the `build` folder
 
-Builds the app for production to the `build` folder.<br />
+`npm run build`
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
+The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Eject the app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm run eject`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-#### Cloning the project
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```
-git clone https://github.com/your_url
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Getting packages and debuging with Stylelint
 
-```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+## Authors
 
-##### For validation detection using Stylelint Run
+👤 **Dagic-zewdu**
 
-```
-npx stylelint "**/*.{css,scss}"
-```
+- [Github](https://github.com/Dagic-zewdu)
+- [LinkedIn](https://www.linkedin.com/in/dagmawi-zewdu-21b835215/)
 
-##### from parent source directory
 
-## Getting packages and debuging with Webhint
-
-```
-npm init -y
-npm install --save-dev hint@6.x
-```
-
-##### For validation detection using Webhint Run
-
-```
-npx hint .
-```
-
-## Getting packages and debuging with Eslint
-
-```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-
-```
-
-##### For validation detection using Eslint Run
-
-```
-
-npx eslint .
-
-```
-
-## Author
-
-👤 **Dagic Zewdu Tilahun**
-
-- GitHub: [@Dagic-zewdu](https://github.com/Dagic-zewdu)
-- Twitter: [@dagic4](https://twitter.com/dagic4)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dagi-zewdu-21b835215/)
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
