@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import numberSeparator from 'number-separator';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
