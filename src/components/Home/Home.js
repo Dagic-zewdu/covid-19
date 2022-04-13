@@ -8,9 +8,9 @@ import ItemsCard from './countryItem';
 
 const Home = () => {
   const [index, setState] = useState('');
-  const { countries, loading, error } = useSelector((state) => state);
+  const { countries } = useSelector((state) => state);
   return (
-    <BasicLayoutContainer loading={loading} error={error}>
+    <BasicLayoutContainer>
       <LandingImage />
       <div className="container">
         <div className="search">

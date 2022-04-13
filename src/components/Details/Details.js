@@ -7,10 +7,10 @@ import BasicLayoutContainer from '../Layouts/BasicLayout';
 
 const Details = () => {
   const { id } = useParams();
-  const { countries, loading, error } = useSelector((state) => state);
+  const { countries } = useSelector((state) => state);
   const country = useCountryData(id, countries);
   return (
-    <BasicLayoutContainer loading={loading} error={error} navtitle={`${country ? country.Country : ''} covid statics`}>
+    <BasicLayoutContainer navtitle={`${country ? country.Country : ''} covid statics`}>
       {
       country
         ? (

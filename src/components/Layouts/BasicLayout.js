@@ -1,12 +1,18 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addCovidDataAsync } from '../../redux/covid/covidActions';
 import Navbar from './Navbar';
 import Spinner from './Spinner';
 
-function BasicLayoutContainer({
-  children, loading, error, navtitle,
-}) {
+function BasicLayoutContainer({ children, navtitle }) {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(addCovidDataAsync());
+  }, []);
+
+  const { loading, error } = useSelector((state) => state);
   return (
     <>
       <Navbar title={navtitle} />
