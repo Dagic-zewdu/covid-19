@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { IoIosArrowBack } from 'react-icons/io';
 import { BiMicrophone, BiCog } from 'react-icons/bi';
-import './Navbar.css';
+import './styles/Navbar.css';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';

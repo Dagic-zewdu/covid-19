@@ -1,6 +1,6 @@
 .hero-wrapper {
   height: 40vh;
-  background: url(../../Assets/covid.jpeg);
+  background: url(../../../Assets/covid.jpeg);
   background-size: cover;
 }
 
@@ -17,4 +17,5 @@
   display: flex;
   justify-content: end;
   text-align: end;
+  opacity: 0.8;
 }

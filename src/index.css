@@ -1,7 +1,11 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', sans-serif;
+                                                
 }
 
 html,
@@ -121,7 +125,13 @@ h2.ea-country {
 
 .info-covid {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+   background:
+    linear-gradient(
+      to right,
+      rgba(255, 203, 203, 0),
+      #fd5193
+    );
   color: white;
   background-color: #e23d7c;
   padding: 20px 40px;
@@ -156,4 +166,17 @@ li:nth-child(odd) {
 
 .white {
   color: #fff;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.flag {
+  flex:1;
+}
+
+.total-country {
+  flex: 1;
 }

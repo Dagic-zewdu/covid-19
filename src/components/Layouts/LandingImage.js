@@ -1,29 +1,24 @@
 import numberSeparator from 'number-separator';
 import { useSelector } from 'react-redux';
-import { tellToday } from '../../utils/date';
-import './LandingImage.css';
+import './styles/LandingImage.css';
 
 const LandingImage = () => {
   const { global } = useSelector((state) => state);
-  //   NewConfirmed: 532118
-  // NewDeaths: 1720
-  // NewRecovered: 0
-  // TotalDeaths: 6177016
-  // TotalRecovered: 0
   return (
     <div className="hero-wrapper">
       <div className="hero">
         <div className="content">
           <h1 className="white">
-            {tellToday()}
-            {' '}
-            Globall data
+            Global data
           </h1>
           <h4 className="white">
-            Totall Confirmed :
-            {numberSeparator(global.TotalConfirmed)}
+            Total Confirmed :
+            {numberSeparator(global.TotalConfirmed, ',')}
           </h4>
-
+          <h4 className="white">
+            Total Deaths :
+            {numberSeparator(global.TotalDeaths, ',')}
+          </h4>
         </div>
       </div>
     </div>

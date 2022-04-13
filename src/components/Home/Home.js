@@ -1,46 +1,43 @@
 /* eslint-disable no-nested-ternary */
+import numberSeparator from 'number-separator';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import BasicLayoutContainer from '../Layouts/BasicLayout';
 import LandingImage from '../Layouts/LandingImage';
-import Navbar from '../Layouts/Navbar';
-import Spinner from '../Layouts/Spinner';
 import ItemsCard from './countryItem';
 
 const Home = () => {
-  const [state, setState] = useState({
-    index: '',
-  });
-  const { loading, error } = useSelector((state) => state);
+  const [index, setState] = useState('');
+  const { countries, loading, error } = useSelector((state) => state);
   return (
-    <>
-      <Navbar />
-      {
-  loading
-    ? <Spinner />
-    : error
-      ? <h1 className="text-center">{error}</h1>
-      : (
-        <>
-          <LandingImage />
-          <div className="container">
-            <div className="search">
-              <h4 className="country-search">Search By Country: </h4>
-              <input
-                value={state.index}
-                type="text"
-                onChange={(e) => setState(e.target.value)}
-                placeholder="Type to search by country"
-                className="search-input"
-              />
-            </div>
-            <div className="countries display">
-              <ItemsCard id="123" country="Ethiopia" />
-            </div>
-          </div>
-        </>
-      )
-}
-    </>
+    <BasicLayoutContainer loading={loading} error={error}>
+      <LandingImage />
+      <div className="container">
+        <div className="search">
+          <h4 className="country-search">Search By Country: </h4>
+          <input
+            value={index}
+            type="text"
+            onChange={(e) => setState(e.target.value)}
+            placeholder="Type to search by country"
+            className="search-input"
+          />
+        </div>
+        <div className="countries display">
+          {
+             countries.filter((country) => country.Country.match(index)).map((country) => (
+               <ItemsCard
+                 key={country.ID}
+                 id={country.ID}
+                 country={country}
+                 totallConfirmed={numberSeparator(country.TotalConfirmed, ',')}
+               />
+             ))
+            }
+
+        </div>
+      </div>
+    </BasicLayoutContainer>
   );
 };
 

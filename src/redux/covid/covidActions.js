@@ -21,7 +21,6 @@ export const addCovidDataAsync = () => (dispatch) => {
     const { Countries: countries, Global: global } = data;
     dispatch(addCovidData({ countries, global }));
   }).catch((err) => {
-    console.log(err);
     dispatch(covidDataError(err.message));
   });
 };
