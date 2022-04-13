@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
