@@ -16,7 +16,6 @@
 
 - [Live Demo Link](https://6256dc07a9940a275a24dff6--gleeful-chimera-2ff1ba.netlify.app/)
 
-
 ## Available Scripts
 
 In the project directory, you can:
