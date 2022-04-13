@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Title
+# COVID-19 Data TRACKER
 
-> Project description paragraph with 30 words. 
+> This is Covid-19 data that shows for each country.You can search your country and know its statistics.  
 
-![screenshot]()
+![screenshot](src/Assets/Screen-Shot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
